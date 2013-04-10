@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 category : lessons
 tagline: "Supporting tagline"
 ---
@@ -10,4 +10,3 @@ Example
 
 ### What is?
 A simple example of jekyll.
-
