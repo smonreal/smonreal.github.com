@@ -1,0 +1,9 @@
+<ul>
+  {% for item in tree %}
+    <li><a href="{{ item.href }}">{{ item.title }}</a></li>
+    {% if item.tree %}
+      {% assign tree = item.tree %}
+      {% include themes/other/tree.html %}
+    {% endif %}
+  {% endfor %}
+</ul>

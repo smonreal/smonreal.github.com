@@ -1,0 +1,22 @@
+---
+layout: layout
+title: Jekyll Base
+tree:
+  - title: Child
+    subtree: Yes
+    tree:
+      - title: Subchild
+      - title: Subchild
+
+  - title: Child
+    tree:
+      - title: Subchild
+      - title: Subchild
+---
+
+<div class="content">
+  <div class="related">
+    {% assign tree = page.tree %}
+    {% include themes/other/tree.html %}
+  </div>
+</div>
